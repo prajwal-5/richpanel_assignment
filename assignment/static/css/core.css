@@ -1,0 +1,73 @@
+.main_bg {
+    background: #002D62;
+}
+
+.card{
+    width: 25rem;
+    border-radius: 5%;
+}
+
+.row{
+    display: flex;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.custom-bg{
+    background: #002D62;
+}
+
+.link{
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.box{
+    width: 50rem;
+    background-color: white;
+    border-radius: 2%;
+}
+
+.t-btn{
+    border-radius: 500px;
+    background: #002D62;
+    color: white;
+    font-weight: bold;
+    border-color: #002D62;
+}
+
+.capsule{
+    background-color:  #002D62;
+    border-radius: 500px;
+    width: 11rem;
+}
+
+.table{
+    table-layout: fixed;
+}
+
+.type{
+    height: 5rem;
+    width: 6rem;
+    background-color:  #6699CC;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.choosen{
+    background-color: #002D62;
+    color: #002D62;
+    font-weight: bold;
+}
+
+.selected{
+    background: white;
+    color: #002D62;
+}
+
+.mod_text{
+    font-weight: 500;
+    font-size: 1.2rem;
+}
