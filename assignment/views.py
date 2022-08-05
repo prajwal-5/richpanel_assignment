@@ -146,7 +146,7 @@ def success(req, user_id, plan_id):
     plan_name = Plan.objects.get(pk=plan_id)
     user = User.objects.get(pk=user_id)
     
-    user.plan_type = plan_name
+    plan_name.user = user
     user.save()
     if(user.plan_period==1):
         period = 'Monthly'
