@@ -51,6 +51,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
+CSRF_TRUSTED_ORIGINS = ["https://pacific-coast-78888.herokuapp.com"]
 ROOT_URLCONF = 'richpanel.urls'
 
 TEMPLATES = [
