@@ -8,6 +8,9 @@ class User(models.Model):
     is_loggedin = models.BooleanField(default=False)
 
     
+    def __str__(self):
+        return self.id
+
     def duration(self):
         return self.plan_period
 
