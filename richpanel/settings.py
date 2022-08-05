@@ -20,6 +20,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
+
+# SECRET_KEY = 'django-insecure-$=$ikwz=_++8!fx=w^_+%8%ty@h83fmpdk-v-ile!9*b43tdw8'
 SECRET_KEY = os.environ['SECRET_KEY']
 
 # SECURITY WARNING: don't run with debug turned on in production!
@@ -131,6 +133,9 @@ STATIC_ROOT = BASE_DIR / 'static'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # Stripe API
+
+# STRIPE_SECRET_KEY = 'sk_test_51LSIgtSBrqKkJ5WgpUwfIQYOnWm2eHdz6DnORNcmGyZf9xD4WnNuoGpTHQhrRzJeUuj0LN8NFInRcjOfalCMXeXh00IV7nrXsr'
+# STRIPE_PUBLISHABLE_KEY = 'pk_test_51LSIgtSBrqKkJ5Wg1nYerXGqGcMaovsY1oOd1YC1mXKhv0u3kMPglp9mOQMhOPhH7RYUswhoydZSMc8j5VV0mMFH00zgEiaO2L'
 
 STRIPE_SECRET_KEY = os.environ['STRIPE_SECRET_KEY']
 STRIPE_PUBLISHABLE_KEY = os.environ['STRIPE_PUBLISHABLE_KEY']
