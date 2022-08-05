@@ -92,6 +92,7 @@ def choosen_plan(req, user_id, plan_id, do_post=True):
     if not User.objects.get(pk=user_id).is_authenticated():
         return redirect('signup')
     if req.method == 'POST' and do_post:
+        # MY_DOMAIN = 'http://127.0.0.1:8000/'
         MY_DOMAIN = 'https://prajwalrichpanel.herokuapp.com/'
         data = User.objects.get(pk=user_id).duration()
         if data == 1:
@@ -147,7 +148,7 @@ def success(req, user_id, plan_id):
     user = User.objects.get(pk=user_id)
     
     plan_name.user = user
-    user.save()
+    plan_name.save()
     if(user.plan_period==1):
         period = 'Monthly'
     else:

@@ -8,8 +8,8 @@ class User(models.Model):
     is_loggedin = models.BooleanField(default=False)
 
     
-    def __str__(self):
-        return self.id
+    def __int__(self):
+        return self.name
 
     def duration(self):
         return self.plan_period
